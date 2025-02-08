@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **Book Listing and Cart Management System** #
 
-## Getting Started
+This is a **Book Listing and Cart Management System** built using **Next.js**, **Redux Toolkit**, **Typescript** and **Tailwind CSS**. Users can add books to a list, remove them, and manage a cart of selected books.
 
-First, run the development server:
+## **Features** ##
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 📚 **Add Books**: Users can add new books to the homepage.
+- ❌ **Remove Books**: Users can remove books from the listing.
+- 📄 **Book Details**: Each book has a title, author, genre, description, cover image, price, rating, and reviews.
+- ⚡ **State Management**: Redux Toolkit is used to manage book and cart states efficiently.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **Technologies Used** ##
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js** (React framework for SSR & routing)
+- **Redux Toolkit** (State management)
+- **TypeScript** (Static typing for better code maintainability)
+- **Tailwind CSS** (Styling framework)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## **Installation & Setup** ##
 
-## Learn More
+**1️. Clone the Repository**
 
-To learn more about Next.js, take a look at the following resources:
+git clone https://github.com/manitianstar/book-listing-app.git
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+cd book-listing-app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**2️. Install Dependencies**
 
-## Deploy on Vercel
+npm install   or yarn install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**3️. Run the Development Server**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm run dev or yarn dev
+
+- The app will be available at <http://localhost:3000>
+
+## **Project Structure** ##
+
+/book-listing-app
+
+src/
+
+├── app/
+
+│   ├── AddBook/
+
+│   │   ├── page.tsx            // AddBook page component
+
+│   ├── BookCart/
+
+│   │   ├── page.tsx            // BookCart page component
+
+│   ├── layout.tsx              // RootLayout for the app
+
+│   ├── page.tsx                // HomePage component
+
+│   ├── globals.css             // Global styles
+
+│   ├── store/
+
+│   │   ├── booksSlice.ts       // Redux slice for managing books
+
+│   │   ├── cartSlice.ts        // Redux slice for managing cart
+
+│   │   ├── store.ts            // Redux store configuration
+
+├── Components/
+
+│   ├── ReviewCards/
+
+│   │   ├── card\_review.tsx     // Component for rendering review cards
+
+│   ├── StoreComponents/
+
+│   │   ├── card.tsx            // Book card component
+
+│   ├── Hero.tsx                // Hero section component
+
+│   ├── KeyFeature.tsx          // Key features section component
+
+│   ├── NavBar.tsx              // Navigation bar component
+
+│   ├── Review.tsx              // Review section component
+
+├── public/
+
+│   ├── libraryBooks.jpg        // Static assets (images)
+
+├── README.md                   // Project documentation
+
+## **How It Works** ##
+
+1️. **Adding a Book**
+
+- Navigate to /AddBook.
+- Fill out the book details and click Add Book.
+- The book will be added to the homepage.
+
+  ![](Aspose.Words.36c1e44a-b282-4c6f-aaad-7bbd41926b7e.001.png)
+
+2\. **Removing a Book**
+
+- Click Remove Book on a book card.
+- The book will be removed from the homepage listing.
+
+  ![](Aspose.Words.36c1e44a-b282-4c6f-aaad-7bbd41926b7e.002.png)
+
+## **Routes** ##
+
+**1. / - Homepage**
+
+- Displays a list of books.
+- Users can:
+  - View book details.
+  - Remove books from the homepage.
+  - Add books to the cart.
+
+    ![](Aspose.Words.36c1e44a-b282-4c6f-aaad-7bbd41926b7e.003.png)
+
+**2. /AddBook - Add Book Page**
+
+- Contains a form to add new books to the collection.
+- Books are dynamically added to the Redux state and displayed on the homepage.
+
+**3. /BookCart - Book Cart Page**
+
+- Displays the list of books added to the cart.
+- Users can view and manage the books in their cart.
