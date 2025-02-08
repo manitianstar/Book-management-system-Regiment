@@ -2,9 +2,6 @@
 
 import React from "react";
 import NavBar from "../Components/NavBar";
-import TravelScheduler from "../Components/Hero";
-import KeyFeatures from "@/Components/KeyFeature";
-import ReviewsSection from "@/Components/Review";
 import Image from "next/image";
 import Card from "./Components/StoreComponents/card";
 import { useSelector } from "react-redux";

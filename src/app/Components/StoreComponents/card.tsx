@@ -2,12 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import defaultBookImg from "../../../../public/book management.jpg"; // Default book image
 import { useRouter } from "next/navigation";
 // Removed unnecessary imports
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import axios from "axios";
 import { useDispatch } from "react-redux";
 import { removeBook } from "@/app/store/booksSlice";
 
@@ -31,14 +29,12 @@ const Card: React.FC<CardProps> = ({
   author,
   genre,
   description,
-  coverImage,
   price,
   rating,
   reviews,
   buttonText1,
   buttonText2,
 }) => {
-  const router = useRouter();
   const dispatch = useDispatch();
 
   const handleRemoveBook = () => {
