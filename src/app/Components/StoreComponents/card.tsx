@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 // Removed unnecessary imports
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
