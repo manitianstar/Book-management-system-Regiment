@@ -126,3 +126,9 @@ src/
 
 - Displays the list of books added to the cart.
 - Users can view and manage the books in their cart.
+
+## **Responsiveness** ##
+
+- This Website is full Responsiveness in nature.
+
+![Screenshot (297)](https://github.com/user-attachments/assets/417fc8be-4bc1-45da-957b-50c8bac75fe3)
