@@ -96,14 +96,14 @@ src/
 - Fill out the book details and click Add Book.
 - The book will be added to the homepage.
 
-  ![](Aspose.Words.36c1e44a-b282-4c6f-aaad-7bbd41926b7e.001.png)
+![Screenshot (296)](https://github.com/user-attachments/assets/16e7a16e-bac1-40f9-a7dc-8a8c582df6e8)
 
 2\. **Removing a Book**
 
 - Click Remove Book on a book card.
 - The book will be removed from the homepage listing.
 
-  ![](Aspose.Words.36c1e44a-b282-4c6f-aaad-7bbd41926b7e.002.png)
+  ![Screenshot (295)](https://github.com/user-attachments/assets/d2c06f7e-d63a-4086-a550-8b11441ccd8a)
 
 ## **Routes** ##
 
@@ -115,7 +115,7 @@ src/
   - Remove books from the homepage.
   - Add books to the cart.
 
-    ![](Aspose.Words.36c1e44a-b282-4c6f-aaad-7bbd41926b7e.003.png)
+![Screenshot (294)](https://github.com/user-attachments/assets/90d9b934-82e9-4a47-8610-58c8296431f2)
 
 **2. /AddBook - Add Book Page**
 
